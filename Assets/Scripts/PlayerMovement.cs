@@ -23,11 +23,11 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.Translate(-transform.up * speed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.R) || Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(transform.right * speed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.L) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(-transform.right * speed * Time.deltaTime);
         }

@@ -15,6 +15,7 @@ public class DragonMove : MonoBehaviour
 
     void Update()
     {
+        //spawning
         ratTimer += Time.deltaTime;
         fireballTimer += Time.deltaTime;
 
