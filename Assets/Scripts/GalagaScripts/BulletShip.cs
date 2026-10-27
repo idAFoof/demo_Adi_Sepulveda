@@ -23,7 +23,7 @@ public class BulletShip : MonoBehaviour
 
         if (transform.position.y < -6)
         {
-            Destroy(bullet);
+            Destroy(gameObject);
         }
     }
 }
