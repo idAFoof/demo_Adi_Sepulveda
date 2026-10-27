@@ -10,10 +10,15 @@ public class WaveSpawner : MonoBehaviour
     {
         waveTimer += Time.deltaTime;
 
-        if(waveTimer > waveWait)
+        if (waveTimer > waveWait)
         {
             waveTimer = 0;
             Instantiate(enemyWaves[Random.Range(0, enemyWaves.Length - 1)], transform.position, Quaternion.identity);
+        }
+
+        if (transform.position.y < -6)
+        {
+            Destroy(gameObject);
         }
     }
 }

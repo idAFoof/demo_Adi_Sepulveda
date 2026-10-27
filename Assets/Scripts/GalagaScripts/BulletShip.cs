@@ -6,6 +6,7 @@ public class BulletShip : MonoBehaviour
 
     public GameObject bullet;
 
+
     public float bulletTimer = 0, bulletWait = 3;
 
     // Update is called once per frame
@@ -22,7 +23,7 @@ public class BulletShip : MonoBehaviour
 
         if (transform.position.y < -6)
         {
-            Destroy(gameObject);
+            Destroy(bullet);
         }
     }
 }
