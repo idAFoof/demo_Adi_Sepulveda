@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GalagaMovement : MonoBehaviour
@@ -44,7 +45,10 @@ public class GalagaMovement : MonoBehaviour
         {
             lifeCount -= 1;
             if (lifeCount <= 0)
+            {
                 lifeCount = 0;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
             lives[lifeCount].enabled = false;
 
         }

@@ -9,6 +9,7 @@ TagManager:
   - Boss
   - PlayerBullet
   - GalagaPlayer
+  - Enemy
   layers:
   - Default
   - TransparentFX
