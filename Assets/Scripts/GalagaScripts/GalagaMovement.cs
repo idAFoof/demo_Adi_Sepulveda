@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class GalagaMovement : MonoBehaviour
 {
-    public float speed = 5;
+    public float speed = 3;
 
     public GameObject bullet;
 
@@ -51,6 +51,14 @@ public class GalagaMovement : MonoBehaviour
             }
             lives[lifeCount].enabled = false;
 
+        }
+        if (collision.gameObject.CompareTag("PowerUp"))
+        {
+            speed += 1;
+        }
+        if (collision.gameObject.CompareTag("PowerUp2"))
+        {
+            speed -= 1;
         }
     }
 }
